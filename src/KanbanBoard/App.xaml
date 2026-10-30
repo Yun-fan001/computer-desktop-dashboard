@@ -1,0 +1,22 @@
+﻿<Application x:Class="KanbanBoard.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:conv="clr-namespace:KanbanBoard.Converters"
+             ShutdownMode="OnExplicitShutdown">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Resources/Themes/BaseStyles.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <conv:PriorityToBrushConverter x:Key="PriorityToBrush"/>
+            <conv:PriorityToTextConverter x:Key="PriorityToText"/>
+            <conv:DueDateToTextConverter x:Key="DueDateToText"/>
+            <conv:DueDateToBrushConverter x:Key="DueDateToBrush"/>
+            <conv:BoolToVisibilityConverter x:Key="BoolToVisibility"/>
+            <conv:InvertBoolConverter x:Key="InvertBool"/>
+            <conv:TagsToTextConverter x:Key="TagsToText"/>
+            <conv:NoteColorToBrushConverter x:Key="NoteColorToBrush"/>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

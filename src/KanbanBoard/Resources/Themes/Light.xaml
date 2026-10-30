@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- 亮色主题调色板 -->
+    <Color x:Key="Color.WindowBackground">#F2F3F7</Color>
+    <Color x:Key="Color.PanelBackground">#FFFFFFFF</Color>
+    <Color x:Key="Color.CardBackground">#FFFFFFFF</Color>
+    <Color x:Key="Color.HoverBackground">#22000000</Color>
+    <Color x:Key="Color.Border">#22000000</Color>
+    <Color x:Key="Color.ForegroundPrimary">#FF1B1B1B</Color>
+    <Color x:Key="Color.ForegroundSecondary">#FF6B6B6B</Color>
+    <Color x:Key="Color.Accent">#FF2F6FED</Color>
+    <Color x:Key="Color.AccentForeground">#FFFFFFFF</Color>
+    <Color x:Key="Color.Danger">#FFE5484D</Color>
+    <Color x:Key="Color.Success">#FF2E9E5B</Color>
+
+    <SolidColorBrush x:Key="Brush.WindowBackground" Color="{DynamicResource Color.WindowBackground}"/>
+    <SolidColorBrush x:Key="Brush.PanelBackground" Color="{DynamicResource Color.PanelBackground}"/>
+    <SolidColorBrush x:Key="Brush.CardBackground" Color="{DynamicResource Color.CardBackground}"/>
+    <SolidColorBrush x:Key="Brush.HoverBackground" Color="{DynamicResource Color.HoverBackground}"/>
+    <SolidColorBrush x:Key="Brush.Border" Color="{DynamicResource Color.Border}"/>
+    <SolidColorBrush x:Key="Brush.ForegroundPrimary" Color="{DynamicResource Color.ForegroundPrimary}"/>
+    <SolidColorBrush x:Key="Brush.ForegroundSecondary" Color="{DynamicResource Color.ForegroundSecondary}"/>
+    <SolidColorBrush x:Key="Brush.Accent" Color="{DynamicResource Color.Accent}"/>
+    <SolidColorBrush x:Key="Brush.AccentForeground" Color="{DynamicResource Color.AccentForeground}"/>
+    <SolidColorBrush x:Key="Brush.Danger" Color="{DynamicResource Color.Danger}"/>
+    <SolidColorBrush x:Key="Brush.Success" Color="{DynamicResource Color.Success}"/>
+
+</ResourceDictionary>

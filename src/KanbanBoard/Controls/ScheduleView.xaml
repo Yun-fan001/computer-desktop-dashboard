@@ -1,0 +1,28 @@
+<UserControl x:Class="KanbanBoard.Controls.ScheduleView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:controls="clr-namespace:KanbanBoard.Controls">
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid>
+            <TextBlock x:Name="EmptyText" Visibility="Collapsed" Margin="4"
+                       Foreground="{DynamicResource Brush.ForegroundSecondary}"/>
+            <ItemsControl x:Name="DaysList">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Label}" FontWeight="Bold" FontSize="13" Margin="4,8,4,4"
+                                       Foreground="{DynamicResource Brush.ForegroundPrimary}"/>
+                            <ItemsControl ItemsSource="{Binding Tasks}">
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <controls:TaskCard/>
+                                    </DataTemplate>
+                                </ItemsControl.ItemTemplate>
+                            </ItemsControl>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </Grid>
+    </ScrollViewer>
+</UserControl>

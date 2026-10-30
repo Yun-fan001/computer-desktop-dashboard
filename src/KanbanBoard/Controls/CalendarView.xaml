@@ -1,0 +1,19 @@
+<UserControl x:Class="KanbanBoard.Controls.CalendarView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="0" Margin="0,0,0,6">
+            <Button DockPanel.Dock="Left" Style="{StaticResource IconButton}" Content="◀" Click="Prev_Click"/>
+            <Button DockPanel.Dock="Right" Style="{StaticResource IconButton}" Content="▶" Click="Next_Click"/>
+            <TextBlock x:Name="MonthText" HorizontalAlignment="Center" VerticalAlignment="Center"
+                       FontWeight="Bold" FontSize="14" Foreground="{DynamicResource Brush.ForegroundPrimary}"/>
+        </DockPanel>
+        <Grid x:Name="WeekdayHeader" Grid.Row="1" Margin="0,0,0,4"/>
+        <Grid x:Name="DaysGrid" Grid.Row="2"/>
+    </Grid>
+</UserControl>
